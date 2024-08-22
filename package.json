@@ -1,0 +1,43 @@
+{
+  "name": "qiankundemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "format": "prettier --cache --write .",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev",
+    "start:pkg": "cd ./packages/pkg-a && npm run dev",
+    "start:all": "npm run start & npm run start:pkg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@ant-design/pro-components": "^2.4.4",
+    "@umijs/max": "^4.3.1",
+    "antd": "^5.4.0",
+    "typescript": "^5.5.4",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
+    "react-router-dom": "^6.6.1",
+    "classnames": "^2.5.1",
+    "js-base64": "^3.7.7",
+    "react-beautiful-dnd": "^13.1.1",
+    "@types/react-beautiful-dnd": "^13.1.8"
+  },
+  "dependencies": {
+    "ahooks": "^3.8.0",
+    "keepalive-for-react": "^2.0.10"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0"
+  }
+}

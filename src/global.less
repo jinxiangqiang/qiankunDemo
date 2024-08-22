@@ -1,0 +1,157 @@
+@import 'assets/css/index';
+
+* {
+  box-sizing: border-box;
+}
+
+.@{ciAnt-prefix}-menu-sub {
+  --ant-menu-sub-menu-item-bg: transparent;
+}
+
+/* 自定义整个滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* 自定义滚动条轨道 */
+::-webkit-scrollbar-track {
+  background: rgba(142, 142, 142, 25%);
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(37, 37, 37, 5%);
+}
+
+/* 自定义滚动条的滑块（thumb） */
+::-webkit-scrollbar-thumb {
+  background: rgba(142, 142, 142, 50%);
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 15%);
+}
+
+/* 当滑块悬停或活动时自定义 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 设置滑块在悬停状态下的背景颜色 */
+}
+
+.@{ciAnt-prefix}-table-header.@{ciAnt-prefix}-table-sticky-holder {
+  top: 32px !important;
+}
+
+.@{ciAnt-prefix}-pro-layout .@{ciAnt-prefix}-pro-layout-bg-list {
+  background: #f0f0f0;
+}
+
+//.@{ciAnt-prefix}-pro-basicLayout-content-disable-margin.@{ciAnt-prefix}-pro-basicLayout-content {
+//  margin-top: 35px;
+//}
+
+.@{ciAnt-prefix}-layout-sider.@{ciAnt-prefix}-layout-sider-dark {
+  .@{ciAnt-prefix}-pro-sider-logo img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.@{ciAnt-prefix}-modal-body {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.rowColor {
+  color: blue;
+}
+
+.red {
+  color: red !important;
+}
+
+.successColor {
+  color: @success-color;
+}
+
+.@{ciAnt-prefix}-layout-sider.@{ciAnt-prefix}-layout-sider-dark.@{ciAnt-prefix}-layout-sider-collapsed {
+  .@{ciAnt-prefix}-pro-sider-logo img {
+    width: auto;
+    height: 29px;
+    margin-left: -7px;
+  }
+}
+
+#root-master {
+  .@{ciAnt-prefix}-pro-page-container-children-content {
+    margin: 10px 10px 0;
+  }
+}
+
+.@{ciAnt-prefix}-pro-footer-bar {
+  z-index: 0;
+}
+
+.@{ciAnt-prefix}-select.@{ciAnt-prefix}-select-disabled .@{ciAnt-prefix}-select-selection-item,
+.@{ciAnt-prefix}-picker.@{ciAnt-prefix}-picker-disabled input,
+.@{ciAnt-prefix}-input.@{ciAnt-prefix}-input-disabled,
+.@{ciAnt-prefix}-input-number.@{ciAnt-prefix}-input-number-disabled input {
+  color: #000 !important;
+}
+
+.@{ciAnt-prefix}-pro-form-query-filter .@{ciAnt-prefix}-form-item-control {
+  overflow: hidden;
+}
+
+.@{ciAnt-prefix}-table-tbody > tr.@{ciAnt-prefix}-table-row:hover > td,
+.@{ciAnt-prefix}-table-tbody > tr > td.@{ciAnt-prefix}-table-cell-row-hover {
+  background: #b3e1f7 !important;
+}
+
+.@{ciAnt-prefix}-table-tbody > .@{ciAnt-prefix}-table-row.active > td {
+  background: #7ecbef !important;
+}
+
+.@{ciAnt-prefix}-table-tbody > tr.@{ciAnt-prefix}-table-row-selected > td {
+  background: #b3e1f7 !important;
+}
+
+/* 在Chrome浏览器下 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+/* 在Firefox浏览器下 */
+input[type='number'] {
+  -moz-appearance: textfield !important;
+}
+
+.borderRight {
+  border-right: 1px solid #babfc7;
+}
+
+.@{ciAnt-prefix}-popover-buttons {
+  display: flex;
+}
+
+.@{ciAnt-prefix}-popconfirm {
+  position: fixed;
+}
+
+.@{ciAnt-prefix}-form-item-control-input-content {
+  .@{ciAnt-prefix}-picker {
+    width: 100%;
+  }
+}
+
+.@{ciAnt-prefix}-card-body {
+  .@{ciAnt-prefix}-pro-card .@{ciAnt-prefix}-pro-card-body {
+    padding: 0;
+  }
+  .@{ciAnt-prefix}-pro-table-list-toolbar-container {
+    padding-top: 0;
+  }
+  .ant-pro-table-list-toolbar-setting-items {
+    line-height: inherit;
+  }
+}
+
+.@{ciAnt-prefix}-pro-table-list-toolbar-title {
+  font-size: 12px;
+}

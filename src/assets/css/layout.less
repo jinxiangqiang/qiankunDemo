@@ -1,0 +1,93 @@
+@import "index";
+html{
+  overflow-x: hidden;
+}
+.@{ci-prefix}-layout-body {
+  position: relative;
+  padding: 8px;
+  min-height: calc(100vh - 32px);
+}
+
+.cache-component {
+  transform: translateZ(0);
+  animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.@{ci-prefix}-lang-box {
+  padding: 0 !important;
+  font-size: 14px !important;
+}
+
+.@{ci-prefix}-member-header {
+  color: #fff;
+  padding: 0 8px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.@{ci-prefix}-layout-text {
+  margin-left: 4px;
+  max-width: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.@{ciAnt-prefix}-pro-sider-actions-collapsed {
+  padding: 0 !important;
+  .ci-layout-text {
+    display: none;
+  }
+}
+
+.@{ciAnt-prefix}-pro-layout .@{ciAnt-prefix}-pro-sider-logo {
+  border-bottom: none;
+  padding-inline: 8px;
+  padding-block: 8px;
+}
+
+div.@{ciAnt-prefix}-menu-dark,
+div.@{ciAnt-prefix}-menu-dark > .@{ciAnt-prefix}-menu {
+  color: rgba(255, 255, 255, 65%);
+  background: #001529 !important;
+}
+
+.@{ciAnt-prefix}-pro-layout .@{ciAnt-prefix}-pro-sider .@{ciAnt-prefix}-layout-sider-children {
+  padding: 0;
+}
+
+.@{ciAnt-prefix}-pro-layout .@{ciAnt-prefix}-pro-sider-logo {
+  overflow: hidden;
+}
+
+div.@{ciAnt-prefix}-pro-table .@{ciAnt-prefix}-pro-table-search {
+  margin-block-end: 8px;
+}
+
+form.@{ciAnt-prefix}-pro-query-filter.@{ciAnt-prefix}-pro-query-filter,
+.@{ciAnt-prefix}-pro-card .@{ciAnt-prefix}-pro-card-body {
+  padding: 8px;
+}
+
+.@{ciAnt-prefix}-menu-dark.@{ciAnt-prefix}-menu-inline .@{ciAnt-prefix}-menu-sub.@{ciAnt-prefix}-menu-inline {
+  background: transparent;
+}
+
+.@{ciAnt-prefix}-card-small.@{ciAnt-prefix}-card-contain-tabs > .@{ciAnt-prefix}-card-head .@{ciAnt-prefix}-card-head-title,
+.@{ciAnt-prefix}-card-small.@{ciAnt-prefix}-card-contain-tabs > .@{ciAnt-prefix}-card-head .@{ciAnt-prefix}-card-extra {
+  margin-top: 8px;
+}
+
+.@{ciAnt-prefix}-menu-sub.@{ciAnt-prefix}-menu-inline{
+  background: transparent !important;
+}
+
